@@ -1,0 +1,57 @@
+ <header class="hero-unit" id="banner">
+
+  <center>
+
+    <!-- <h2> Login Counter </h2> -->
+
+    <div>
+    <p><h4> {{message}} </h4></p>
+    </div>
+
+    <div ng-hide="loggedIn" class="ng-hide">
+
+      <form name="userForm" ng-model="userForm" role="form">
+      <!-- action="/users" method="post"> -->
+
+        <div class="form-group">
+          <label for="userInput">Username:</label> 
+          <input type="text" name="userInput" id="userInput" ng-model="userInput">
+        </div>
+        <br>
+        <div class="form-group"> 
+          <label for="passwordInput">Password:</label>
+          <input type="password" name="passwordInput" id="passwordInput" ng-model="passwordInput">
+        </div>
+
+        <p>
+        <button type="submit" ng-click="userLogin(userForm)" id="userlogin" name='loginButton'>
+          Login</button>
+        &nbsp; &nbsp;
+        <button type="submit" ng-click="addUser(userForm)" id="useradd" name='addButton'>
+          Add User</button>
+        </p>
+      </form>
+
+    </div>
+
+    <!-- Hide submission form if user is loggedIn -->
+    <div ng-show="loggedIn" class="ng-show">
+      <button type="submit" ng-click="userLogout()" id="userlogout" name='logoutButton'>
+        Logout</button>
+    </div>
+
+    <!-- <p>User: {{ user }}</p>
+    <p>Password: {{ password }}</p>
+    <p>Response: {{ currentUser }}</p> -->
+
+  </center>
+
+  </div>
+</header>
+
+<footer class="footer">
+  <div class="container">
+      <!-- <p>CSS is from Angular Fullstack v2.0.13 |-->
+  </div>
+</footer> 
+
