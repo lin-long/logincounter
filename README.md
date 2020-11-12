@@ -6,7 +6,7 @@ Instructions for Deploying Locally:
 
 1) Clone the repo (or download the zip file from Github)
 
-         git clone https://github.com/lin-long/warmup1.git
+         git clone https://github.com/lin-long/logincounter.git
 
 2) cd into the root directory and run <b>bower update & sudo npm install</b> to install dependencies.
 
